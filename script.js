@@ -15,7 +15,7 @@ const randomMessage = {
 let returnMessage = [];
 
 //Iterate over the object
-for (let prop in messageOfTheDay) {
+for (let prop in randomMessage) {
     let valueIndex = generateRandomNumber(randomMessage[prop].length)
 
     switch (prop) {
@@ -32,5 +32,7 @@ for (let prop in messageOfTheDay) {
             returnMessage.push('Today is your luckiest of days.  Anything you do today will be a great success.')       
     }
 }
-console.log (randomMessage);
+
+const mixedMessage = returnMessage.join(" ");
+console.log (mixedMessage);
 
