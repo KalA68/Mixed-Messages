@@ -2,7 +2,7 @@
 
 //Function to return a random number to be used as 
 function generateRandomNumber (num) {
-    return Math.floor(Math.random) * num
+    return Math.floor(Math.random() * num)
 };
 
 //Create an Object
@@ -20,13 +20,13 @@ for (let prop in randomMessage) {
 
     switch (prop) {
         case 'luckyNumber': 
-            returnMessage.push(`Your lucky number today is ${luckyNumber}.`)
+            returnMessage.push(`Your lucky number today is ${randomMessage[prop]}.`)
             break
         case 'luckyColor':
-            returnMessage.push(`Your lucky color for today is ${randomMessage[prop][valueIndex].length}.`)
+            returnMessage.push(`Your lucky color for today is ${randomMessage[prop][valueIndex]}.`)
             break
         case 'action':
-            returnMessage.push(`You should ${randomMessage[prop][valueIndex].length}.`)
+            returnMessage.push(`You should ${randomMessage[prop][valueIndex]}.`)
             break
         default:
             returnMessage.push('Today is your luckiest of days.  Anything you do today will be a great success.')       
